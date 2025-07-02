@@ -44,6 +44,7 @@ Solution:
 import pandas as pd
 
 def dropDuplicateEmails(customers: pd.DataFrame) -> pd.DataFrame:
-    df = customers.drop_duplicates(subset=['email'], keep='first')
-    return df
+    customers = customers.drop_duplicates(subset=['email'], keep='first')
+    return customers
+    
 
